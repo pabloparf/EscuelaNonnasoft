@@ -534,6 +534,7 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="SiteNonnaEscuela.Master" />
+    <None Include="Properties\PublishProfiles\EscuelaNonna.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -567,6 +568,12 @@
     <Compile Include="SiteNonnaEscuela.Master.designer.cs">
       <DependentUpon>SiteNonnaEscuela.Master</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{e72e5fa7-0763-4ebb-bb08-0fb17413535a}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
