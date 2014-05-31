@@ -61,6 +61,7 @@ namespace DataAccessLayer
                         usuario.ID = Convert.ToInt32(reader["ID_PERSONA"]);
                         usuario.Nombre = reader["NOMBRE"].ToString();
                         usuario.ApellidoP = reader["APELLIDO_PATERNO"].ToString();
+                        usuario.ApellidoM = reader["APELLIDO_MATERNO"].ToString();
                         usuario.Email = reader["EMAIL"].ToString();
                         usuario.Sexo = reader["SEXO"].ToString();
                         usuario.Nacionalidad = reader["NACIONALIDAD"].ToString();

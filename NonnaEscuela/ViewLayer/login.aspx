@@ -106,12 +106,13 @@
 <script src="assets/scripts/core/app.js" type="text/javascript"></script>
 <script src="assets/scripts/custom/login-soft.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
+    <asp:Literal runat="server"></asp:Literal>
 <script>
     jQuery(document).ready(function () {
         App.init();
         Login.init();
     });
-	</script>
+</script>
 <!-- END JAVASCRIPTS -->
 </body>
 </html>
