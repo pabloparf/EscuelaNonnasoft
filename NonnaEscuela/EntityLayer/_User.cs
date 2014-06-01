@@ -23,4 +23,9 @@ namespace EntityLayer
         public bool Ingresa = false;
   
     }
+
+    public class _Profesor
+    {
+        public List<int> HorasDisponible;
+    }
 }
