@@ -24,8 +24,30 @@ namespace EntityLayer
   
     }
 
-    public class _Profesor
+    public class _Profesor:_User
     {
-        public List<int> HorasDisponible;
+        public int IDProfesor { get; set; }
+        public List<int> HorasDisponible;       
+    }
+
+    public class _Domicilio:_User
+    {
+        public string TipoDomicilio { get; set; }
+        public string Calle { get; set; }
+        public string NumeroExt { get; set; }
+        public string NumeroInt { get; set; }
+        public string Colonia { get; set; }
+        public string Municipio { get; set; }
+        public string Estado { get; set; }
+        public string Pais { get; set; }
+        public string CP { get; set; }
+    }
+
+    public class _Telefono : _User
+    {
+        public string TipoTelefono { get; set; }
+        public string CodigoPais { get; set; }
+        public string CodigoCiudad { get; set; }
+        public string Numero { get; set; }
     }
 }
